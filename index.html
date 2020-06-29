@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div id = "progress">
+
+    </div>
+    <div id = "result">
+
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12">
+                <img src = "https://images.ctfassets.net/p0qf7j048i0q/697BE3B5145443FA935B58140B45264E/a2852f701abeef02542260c4a41df6af/SampleLettersHowtocommunicateduringdisputeresolution.jpg?w=1000&h=750&fit=fill&fm=webp">
+            </div>
+        </div>
+    </div>
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src = "https://parv2007.github.io/Git-learning/Tesseract.js"></script>
+
+    <script>
+        let img = new Image()
+        img.src = "https://images.ctfassets.net/p0qf7j048i0q/697BE3B5145443FA935B58140B45264E/a2852f701abeef02542260c4a41df6af/SampleLettersHowtocommunicateduringdisputeresolution.jpg?w=1000&h=750&fit=fill&fm=webp"
+        img.onload = function() {
+            console.log("loaded........", "$$$$");
+            
+            Tesseract.recognize(img).progress((progress)=>{
+                console.log(progress, "$$$$");
+                if (progress.status === "recognizing text") {
+                    $('#progress').text(progress.progress*100 + "%");
+                }
+            }).then((result)=>{
+                console.log(result, "$$$$");
+
+                $('#result').text(result.text);
+            }}
+        }
+    </script>
+</body>
+</html>
