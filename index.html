@@ -1,150 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="Logo.jpg" type="image/jpg" sizes="100x100">
-<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-<script src = "wow.min.js"></script>
-<script>
-new WOW().init()
-</script>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+	<head>
+		<title>Energy conservation</title>	
+		<link rel="stylesheet" href="styles.css">
+		<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+		<script src = "wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>                                                      
+	</head>
+	<body>
+		<div id="preloader"></div>
+		<div id="content"><br><br><br><br>
+			<div class="slideshow-container">
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
+				<div class="mySlides fade" style = "background-color: white;">
+				  <div class="numbertext">1 / 4</div>
+				  <center><a href = "index.html"><img src="Rocket.gif" style="width: 500px;"></a></center>
+				  <div class="text" style = "color: black;">Home</div>
+				</div>
+				
+				<div class="mySlides fade" style = "background-color: white;">
+				  <div class="numbertext">2 / 4</div>
+				  <center><a href = "subsection_1.html"><img src="Gif.gif" style="width:500px"></a></center>
+				  <div class="text" style = "color: darkgreen;">What is energy conservation?</div>
+				</div>
+				
+				<div class="mySlides fade" style = "background-color: #015089">
+				  <div class="numbertext">3 / 4</div>
+				  <center><a href = "subsection_2.html"><img src="Energy1.gif" style="width:500px"></a></center>	
+				  <div class="text" style = "color: white;">What is the importance of energy?</div>
+				</div>
 
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff00;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: 200px;
-}
-
-.topnav a {
-  display: block; 
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-}
-
-.topnav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: white;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-.topnav a:hover::before {
-  width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(Sansation_Light.ttf);
-}
-
-#preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    overflow: visible;
-    background: url('Energy Conservation.gif') no-repeat center center;
-    background-image: url("Energy Conservation.gif");
-    background-color: #c5ed8c;
-    }
-
-  #content {
-    display: none;
-  }
-</style>
-</head>
-<body style = "font-family: myFirstFont; background-image: url(Background.png); background-size: 100%; background-position: center; background-repeat: no-repeat; background-attachment: fixed; color: white;">
-<div id = "preloader"></div>
-<div id = "content">
-<center><header>
-<div class="topnav" id="myTopnav" style = "float: right; text-align: center;"><br><br><br><b>
-  <a href="about.html"><span style = "visibility: hidden;">Yo</span>About</a>
-  <a href="last.html"><span style = "visibility: hidden;">Yo</span>What can you do?</a></b>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div></header></center>
-<center><h1 class = "wow animate__animated animate__backInDown">The term "Energy Conservation", does it bounce off your head?</h1><h2 class = "wow animate__animated animate__backInUp animate__delay-2s">Well, of what use can I be to you?</h2><h2 class = "wow animate__animated animate__backInLeft animate__delay-4s">Wanna surf arround on my website? You are free to!</h3><img class = "animate__animated animate__backInRight animate__delay-5s" src = "Gif.gif" height = "500px"></center>
-</div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<script>var preloader;
-
-    function preload(opacity) {
-        if(opacity <= 0) {
-            showContent();
-        }
-        else {
-            preloader.style.opacity = opacity;
-            window.setTimeout(function() { preload(opacity - 0.05) }, 100);
-        }
-    }
-    
-    function showContent() {
-        preloader.style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-    }
-    
-    document.addEventListener("DOMContentLoaded", function () {
-        preloader = document.getElementById('preloader');
-        preload(1);
-    });</script>    
-</body>
+				<div class="mySlides fade" style = "background-color: #280058;">
+					<div class="numbertext">4 / 4</div>
+					<center><a href = "subsection_3.html"><img src="Blah1.gif" style="width:650px"></a></center>	
+					<div class="text" style = "color: white;">How can we save energy?</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+				
+			<table>
+				<tr>
+					<td class="wow content animate__animated animate__lightSpeedInRight">
+						<b>W</b>e all know that energy is so precious in our life for it prevails in any task we perform, from cooking to heating.
+						<br>If it will vanish, we won't be able to do a single task! 
+						<p>Here, we will be talking about energy conservation. </p>
+						<p>So <a href = "mainsection.html">click here</a> for more information about Energy Conservation.</p>
+					</td>
+					<td class="blank"></td>
+					<td class="menu">
+						<b>
+							<ul>
+								<li><a href = "index.html">Home</a></li>
+								<li><a href = "mainsection.html">Main</a></li>
+								<li><a href = "subsection_1.html">What is Energy Conservation?</a></li>
+								<li><a href = "subsection_2.html">What is importance of energy?</a></li>
+								<li><a href = "subsection_3.html">How can we save energy?</a></li>
+							</ul>
+						</b>						
+						<p class='profile'>
+							@Developed By: 
+							<br>
+							<br>
+							Parv Maheshwari (VIII-C)
+							<br>
+							Inesh Agarwal (VII-E)
+						</p>
+					</td>
+				</tr>
+			</table>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				var preloader;
+	
+				function preload(opacity) {
+						if(opacity <= 0) {
+								showContent();
+						}
+						else {
+								preloader.style.opacity = opacity;
+								window.setTimeout(function() { preload(opacity - 0.05) }, 100);
+						}
+				}
+				
+				function showContent() {
+						preloader.style.display = 'none';
+						document.getElementById('content').style.display = 'block';
+				}
+				
+				document.addEventListener("DOMContentLoaded", function () {
+						preloader = document.getElementById('preloader');
+						preload(1);
+				});
+			</script>
+	 </div> 
+	</body>
 </html>

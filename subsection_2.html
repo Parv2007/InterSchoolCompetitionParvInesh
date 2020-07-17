@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Energy conservation subsection 1</title>	
+		<link rel="stylesheet" href="styles.css">
+		<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">      
+		<script src = "wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>                                                                              
+	</head>
+	<body>
+		<div id="preloader-section"></div>
+		<div id="content" style = "position: relative; margin: 0; padding: 0px;"><br><br><br><br>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade" style = "background-color: white;">
+				  <div class="numbertext">1 / 3</div>
+				  <center><a href = "index.html"><img src="Rocket.gif" style="width: 500px;"></a></center>
+				  <div class="text" style = "color: black;">Home</div>
+				</div>
+				
+				<div class="mySlides fade" style = "background-color: white;">
+				  <div class="numbertext">2 / 3</div>
+				  <center><a href = "subsection_1.html"><img src="Gif.gif" style="width:500px"></a></center>
+				  <div class="text" style = "color: darkgreen;">What is energy conservation?</div>
+				</div>
+				
+				<div class="mySlides fade" style = "background-color: #015089">
+				  <div class="numbertext">3 / 4</div>
+				  <center><a href = "subsection_2.html"><img src="Energy1.gif" style="width:500px"></a></center>	
+				  <div class="text" style = "color: white;">What is the importance of energy?</div>
+				</div>
+
+				<div class="mySlides fade" style = "background-color: #280058;">
+					<div class="numbertext">4 / 4</div>
+					<center><a href = "subsection_3.html"><img src="Blah1.gif" style="width:650px"></a></center>	
+					<div class="text" style = "color: white;">How can we save energy?</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+				
+			<table>
+				<tr>
+					<td class="content">
+						<div class = "wow animate__animated animate__lightSpeedInRight">
+						<h3>What is importance of energy?</h3>
+						<ul>
+							<li>We use energy faster than it can be produced - Coal, oil and natural gas - the most utilised sources take thousands of years for formation.</li>
+							<li>Energy resources are limited - India has approximately 1% of world’s energy resources but it has 16% of world population.</li>
+							<li>Most of the energy sources we use cannot be reused and renewed - Non renewable energy sources constitute 80% of the fuel use. It is said that our energy resources may last only for another 40 years or so.</li>
+							<li>We save the country a lot of money when we save energy - About 75 per cent of our crude oil needs are met from imports which would cost about Rs.1, 50,000 crore a year</li>
+							<li>We save our money when we save energy - Imagine your savings if your LPG cylinder comes for an extra week or there is a cut in your electricity bills</li>
+							<li>We save our energy when we save energy - When we use fuel wood efficiently, our fuel wood requirements are lower and so is our drudgery for its collection</li>
+						<li>Energy saved is energy generated - When we save one unit of energy, it is equivalent to 2 units of energy produced</li>
+						<li>Save energy to reduce pollution - Energy production and use account to large proportion of air pollution and more than 83 percent of greenhouse gas emissions</li>
+						</ul></div>
+					</td>
+					<td class="blank"></td>
+					<td class="menu">
+						<b>
+							<ul>
+								<li><a href = "index.html">Home</a></li>
+								<li><a href = "mainsection.html">Main</a></li>
+								<li><a href = "subsection_1.html">What is Energy Conservation?</a></li>
+								<li><a href = "subsection_2.html">What is importance of energy?</a></li>
+								<li><a href = "subsection_3.html">How can we save energy?</a></li>
+							</ul>
+						</b>						
+						<p class='profile'>
+							@Developed By: 
+							<br>
+							<br>
+							Parv Maheshwari (VIII-C)
+							<br>
+							Inesh Agarwal (VII-E)
+						</p>
+					</td>
+				</tr>
+			</table>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+			<script>var preloader;
+	
+				function preload(opacity) {
+						if(opacity <= 0) {
+								showContent();
+						}
+						else {
+								preloader.style.opacity = opacity;
+								window.setTimeout(function() { preload(opacity - 0.05) }, 100);
+						}
+				}
+				
+				function showContent() {
+						preloader.style.display = 'none';
+						document.getElementById('content').style.display = 'block';
+				}
+				
+				document.addEventListener("DOMContentLoaded", function () {
+						preloader = document.getElementById('preloader-section');
+						preload(1);
+				});</script>
+	 </div> 
+	</body>
+</html>
