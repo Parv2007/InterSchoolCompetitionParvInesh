@@ -13,46 +13,7 @@
 		<div id="preloader-section"></div>
 		<div id="content" style = "position: relative; margin: 0; padding: 0px;"><br><br><br><br>
 			<div style = "background-color: white; margin-right: 1530px; float: left; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;"><img src = "Logo.jpg" width = "200px" height = "200px"></div>
-			<h1 style = "color: black;" class = "wow animate__animated animate__rubberBand">What is Energy Conservation?</h1>
-			<div class="slideshow-container">
-
-				<div class="mySlides fade" style = "background-color: white;">
-					<div class="numbertext">1 / 4</div>
-					<center><a href = "index.html"><img src="Energy1.jpg" style="width: 500px;"></a></center>
-					<div class="text" style = "color: black;"></div>
-				  </div>
-				  
-				  <div class="mySlides fade" style = "background-color: white;">
-					<div class="numbertext">2 / 4</div>
-					<center><a href = "subsection_1.html"><img src="Gif.gif" style="width:500px"></a></center>
-					<div class="text" style = "color: darkgreen;">What is energy conservation?</div>
-				  </div>
-				  
-				  <div class="mySlides fade" style = "background-color: #015089">
-					<div class="numbertext">3 / 4</div>
-					<center><a href = "subsection_2.html"><img src="Energy1.gif" style="width:500px"></a></center>	
-					<div class="text" style = "color: white;">What is the importance of energy?</div>
-				  </div>
-  
-				  <div class="mySlides fade" style = "background-color: #01ffdb;">
-					  <div class="numbertext">4 / 4</div>
-					  <center><a href = "subsection_3.html"><img src = "Energy2.gif" style="width:650px"></a></center>	
-					  <div class="text" style = "color: white;"></div>
-				  </div>
-				
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				
-				</div>
-				<br>
-				
-				<div style="text-align:center">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				  <span class="dot" onclick="currentSlide(4)"></span>
-				</div>
-				
+			<h1 style = "color: black;" class = "wow animate__animated animate__fadeInDownBig">What is Energy Conservation?</h1>
 			<table>
 				<tr>
 					<td class="content">
@@ -106,34 +67,6 @@
 					</td>
 				</tr>
 			</table>
-			<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
-				
-				function plusSlides(n) {
-				  showSlides(slideIndex += n);
-				}
-				
-				function currentSlide(n) {
-				  showSlides(slideIndex = n);
-				}
-				
-				function showSlides(n) {
-				  var i;
-				  var slides = document.getElementsByClassName("mySlides");
-				  var dots = document.getElementsByClassName("dot");
-				  if (n > slides.length) {slideIndex = 1}    
-				  if (n < 1) {slideIndex = slides.length}
-				  for (i = 0; i < slides.length; i++) {
-					  slides[i].style.display = "none";  
-				  }
-				  for (i = 0; i < dots.length; i++) {
-					  dots[i].className = dots[i].className.replace(" active", "");
-				  }
-				  slides[slideIndex-1].style.display = "block";  
-				  dots[slideIndex-1].className += " active";
-				}
-				</script>
 			<script>var preloader;
 	
 				function preload(opacity) {

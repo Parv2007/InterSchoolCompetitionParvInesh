@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Energy conservation</title>	
-		<link rel="stylesheet" href="styles.css">
-		<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+		<title>Energy conservation subsection 1</title>	
+		<link rel="stylesheet" href="styles.css">       
+		<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">      
 		<script src = "wow.min.js"></script>
 		<script>
 			new WOW().init()
-		</script>                                                      
+		</script>                                                                       
 	</head>
 	<body>
-		<div id="preloader"></div>
-		<div id="content"><br>
-			<div style = "background-color: white; margin-right: 1530px; float: left; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;"><img src = "Logo.jpg" width = "200px" height = "200px"></div>
-			<h1 style = "color: black;" class = "wow animate__animated animate__rubberBand">Energy Conservation and You</h1>
+		<div id="preloader-section"></div>
+		<div id="content" style = "position: relative; margin: 0; padding: 0px;"><br><br><br><br>
 			<div class="slideshow-container">
 
 				<div class="mySlides fade" style = "background-color: white;">
-				  <div class="numbertext">1 / 4</div>
-				  <center><a href = "index.html"><img src="Energy1.jpg" style="width: 500px;"></a></center>
-				  <div class="text" style = "color: black;"></div>
+				  <div class="numbertext">1 / 3</div>
+				  <center><a href = "index.html"><img src="Rocket.gif" style="width: 500px;"></a></center>
+				  <div class="text" style = "color: black;">Home</div>
 				</div>
 				
 				<div class="mySlides fade" style = "background-color: white;">
-				  <div class="numbertext">2 / 4</div>
+				  <div class="numbertext">2 / 3</div>
 				  <center><a href = "subsection_1.html"><img src="Gif.gif" style="width:500px"></a></center>
 				  <div class="text" style = "color: darkgreen;">What is energy conservation?</div>
 				</div>
@@ -34,32 +32,34 @@
 				  <div class="text" style = "color: white;">What is the importance of energy?</div>
 				</div>
 
-				<div class="mySlides fade" style = "background-color: #01ffdb;">
+				<div class="mySlides fade" style = "background-color: #280058;">
 					<div class="numbertext">4 / 4</div>
-					<center><a href = "subsection_3.html"><img src = "Energy2.gif" style="width:650px"></a></center>	
-					<div class="text" style = "color: white;"></div>
+					<center><a href = "subsection_3.html"><img src="Blah1.gif" style="width:650px"></a></center>	
+					<div class="text" style = "color: white;">How can we save energy?</div>
 				</div>
 				
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				
-			</div>
-			<br>
-			
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-				<span class="dot" onclick="currentSlide(4)"></span>
-			</div>
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				</div>
 				
 			<table>
 				<tr>
-					<td class="wow content animate__animated animate__lightSpeedInRight">
-						<b>W</b>e all know that energy is so precious in our life for it prevails in any task we perform, from cooking to heating.
-						<br>If it will vanish, we won't be able to do a single task! 
-						<p>Here, we will be talking about energy conservation. </p>
-						<p>So <a href = "subsection_1.html">click here</a> for more information about Energy Conservation.</p>
+					<td class="content">
+						<ol class="content-ul">
+							<div class = "wow animate__animated animate__lightSpeedInRight">
+							<li><a href = "subsection_1.html" style="font-style: italic;text-decoration: none;"><b>W</b>hat is Energy Conservation?</a></li>
+							<li><a href = "subsection_2.html" style="font-style: italic;text-decoration: none;"><b>W</b>hat is importance of energy?</a></li>
+							<li><a href = "subsection_3.html" style="font-style: italic;text-decoration: none;"><b>H</b>ow can we save energy?</a></li></div>
+						</ol>
 					</td>
 					<td class="blank"></td>
 					<td class="menu">
@@ -109,7 +109,8 @@
 				  slides[slideIndex-1].style.display = "block";  
 				  dots[slideIndex-1].className += " active";
 				}
-				var preloader;
+				</script>
+			<script>var preloader;
 	
 				function preload(opacity) {
 						if(opacity <= 0) {
@@ -127,10 +128,9 @@
 				}
 				
 				document.addEventListener("DOMContentLoaded", function () {
-						preloader = document.getElementById('preloader');
+						preloader = document.getElementById('preloader-section');
 						preload(1);
-				});
-			</script>
+				});</script>
 	 </div> 
 	</body>
 </html>
