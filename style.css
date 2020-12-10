@@ -1,0 +1,255 @@
+.nav, .menu {
+    display: flex;
+}
+
+body {
+  background-image: url(Background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  font-family: "mySecondFont";
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Sansation_Bold.ttf);
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(Sansation_Light.ttf);
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url(BaristaRegular.ttf);
+}
+
+::selection {
+  background-color: #4CBB17;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+  max-height: 50%;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  background-color: #dcefe5;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background-color: #2e9961;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(9, 153, 86), rgb(3, 238, 42), rgb(238, 255, 0)); 
+  border-radius: 10px;
+}
+.nav {
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.active {
+  font-family: myFirstFont;
+}
+
+.nav input:checked ~ .menu {
+    width: 450px;
+}
+
+.menu {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+    float: left;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #161919;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+.nav {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.nav span {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: #5DFC0A;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.CenterHeading {
+    text-align: center;
+    font-family: myFirstFont;
+    color: black;
+    font-size: 50px;
+}
+
+nav {
+    font-family: mySecondFont;
+}
+
+#top {
+  color: black;
+}
+
+.laterLogos{
+  margin-left: 20px;
+}
+
+#otherSection {
+  background-image: url("Section Background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.6);
+  padding: 30px;
+}
+
+#mainImg {
+  height: 600px;
+  width: 800px;
+}
+
+#finalSection {
+  padding: 40px;
+  background-color: black;
+}
+
+#video {
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(0,0,0,.6);
+}
+
+.information {
+  padding: 40px;
+  margin: 0px 20px;
+  box-shadow: 10px 10px rgb(59, 164, 107, 0.5), 5px 5px rgb(71, 185, 91, 0.5);
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.information h2, h1 {
+  font-family: myFirstFont;
+  color: white;
+}
+
+.information h1 {
+  font-size: 80px;
+}
+
+.information p {
+  font-size: 30px;
+}
+
+.information ol {
+  font-size: 23px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 500%;
+  }
+
+  #mainImg {
+    height: 350px;
+    width: 650px;
+  }
+
+  #video {
+    width: 400px;
+    height: 400px;
+  }
+
+  #otherSection h1 {
+    margin-bottom: 20px;
+  }
+}
+
+#form {
+  padding: 20px;
+}
+
+#secondaryOrderedList {
+  margin-left: 30px;
+}
